@@ -1,7 +1,0 @@
-Podstawowe funkcje:
-- button do klikania co daje punkty
-- sklep w którym można punkty wydawać
-*upgrade'y:
-* + x klików (zaczyna się od 1 cena i ilość dodawanych punktów jest skalowalna)
-* autoclicker - można kupić raz - co sekundę daje tyle punktów ile obecnie dostaje użytkownik klikając przycisk
-* boost - na np 10 sekund podwaja ilość kliknięć
