@@ -13,7 +13,7 @@ namespace ProjektClicker
         public SaveLoadService()
         {
             var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var saveDir = Path.Combine(documents, "SavedGames", "ProjektClicker");
+            var saveDir = Path.Combine(documents, "ClickerGame"); // miejsce zapisu - w dokumentach usera w folderze ClickerGame
             Directory.CreateDirectory(saveDir);
             _filePath = Path.Combine(saveDir, "save.json");
         }
