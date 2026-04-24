@@ -1,9 +1,14 @@
 ﻿<Application x:Class="ProjektClicker.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ProjektClicker"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="ThemeBackground"     Color="#1E1E2E"/>
+        <SolidColorBrush x:Key="ThemePanelPrimary"   Color="#2A2A40"/>
+        <SolidColorBrush x:Key="ThemePanelSecondary" Color="#25253A"/>
+        <SolidColorBrush x:Key="ThemeSurface"        Color="#3A3A5A"/>
+        <SolidColorBrush x:Key="ThemeAccent"         Color="#6C63FF"/>
+        <SolidColorBrush x:Key="ThemeText"           Color="#FFFFFF"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </Application.Resources>
 </Application>

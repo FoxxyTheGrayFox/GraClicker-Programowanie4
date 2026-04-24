@@ -1,24 +1,23 @@
 using System.IO;
 using System.Windows.Media.Imaging;
-/*TODO: pls help czemu alpha nie działa?*/
+
 namespace ProjektClicker
 {
     public class ClickyImageService
     {
-        public static BitmapImage? GetImage(ClickyUpgrade clicky)
+        private static readonly Dictionary<ClickyStyle, string> StyleToFile = new()
         {
-            if (!clicky.Owned) // tylko jeśli clicky jest kupiony
-                return null;
-                
-            string file = clicky.Style switch
-            {
-                ClickyStyle.Normal => "clicky.png",
-                ClickyStyle.Hat => "clickyhat.png",
-                ClickyStyle.Monocle => "clickymonocle.png",
-                _ => "clicky.png",
-            };
-            if (!File.Exists(file))
-                return null;
+            { ClickyStyle.Normal,  "clicky.png" },
+            { ClickyStyle.Hat,     "clickyhat.png" },
+            { ClickyStyle.Monocle, "clickymonocle.png" }
+        };
+
+        public BitmapImage? GetImage(ClickyUpgrade clicky)
+        {
+            if (!clicky.Owned) return null;
+
+            var file = StyleToFile.GetValueOrDefault(clicky.Style, "clicky.png");
+            if (!File.Exists(file)) return null;
 
             var image = new BitmapImage();
             image.BeginInit();

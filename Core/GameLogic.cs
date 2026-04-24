@@ -6,8 +6,8 @@ namespace ProjektClicker
     {
         private readonly GameState _state = state;
         public ObservableCollection<IUpgrade> Upgrades { get; } = [];
-        public void Click() => _state.AddPoints((long)(1 * _state.TotalMultiplier)); // uwzględnia mnożnik
-        // kupowanie upgrade'u
+        public void Click() => _state.AddPoints((long)(1 * _state.TotalMultiplier)); 
+
         public void BuyUpgrade(IUpgrade upgrade)
         {
             if (!upgrade.CanBuy(_state)) return;
