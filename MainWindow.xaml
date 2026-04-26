@@ -53,6 +53,12 @@
                                         </ControlTemplate>
                                     </Setter.Value>
                                 </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.5"/>
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                    </Trigger>
+                                </Style.Triggers>
                             </Style>
                         </Button.Style>
                     </Button>
@@ -78,6 +84,12 @@
                                         </ControlTemplate>
                                     </Setter.Value>
                                 </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.5"/>
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                    </Trigger>
+                                </Style.Triggers>
                             </Style>
                         </Button.Style>
                     </Button>
@@ -104,7 +116,7 @@
                               Width="140"
                               Margin="0,0,8,0"
                               Background="{DynamicResource ThemeSurface}"
-                              Foreground="{DynamicResource ThemeText}"
+                              Foreground="Black"
                               BorderThickness="0"/>
                     <Button Content="Zastosuj"
                             Command="{Binding ApplyThemeCommand}"
@@ -127,6 +139,12 @@
                                         </ControlTemplate>
                                     </Setter.Value>
                                 </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.5"/>
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                    </Trigger>
+                                </Style.Triggers>
                             </Style>
                         </Button.Style>
                     </Button>
@@ -182,6 +200,12 @@
                                         </ControlTemplate>
                                     </Setter.Value>
                                 </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.5"/>
+                                        <Setter Property="Cursor" Value="Arrow"/>
+                                    </Trigger>
+                                </Style.Triggers>
                             </Style>
                         </Button.Style>
                     </Button>
@@ -269,6 +293,12 @@
                                                         </ControlTemplate>
                                                     </Setter.Value>
                                                 </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsEnabled" Value="False">
+                                                        <Setter Property="Opacity" Value="0.5"/>
+                                                        <Setter Property="Cursor" Value="Arrow"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
                                             </Style>
                                         </Button.Style>
                                         <StackPanel>
@@ -312,6 +342,12 @@
                                 </ControlTemplate>
                             </Setter.Value>
                         </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value="0.5"/>
+                                <Setter Property="Cursor" Value="Arrow"/>
+                            </Trigger>
+                        </Style.Triggers>
                     </Style>
                 </Button.Style>
                 <TextBlock Text="⭐"
