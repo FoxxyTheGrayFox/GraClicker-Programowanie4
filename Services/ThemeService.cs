@@ -28,8 +28,8 @@ namespace ProjektClicker
                 PanelPrimary:  "#2B2B2B",
                 PanelSecondary:"#222222",
                 Surface:       "#333333",
-                Accent:        "#C0C0C0",
-                Text:          "#E8E8E8"
+                Accent:        "#7d7d94",
+                Text:          "#ffffff"
             )
         };
 
